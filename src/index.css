@@ -15,34 +15,34 @@
     --popover: 0 0% 100%;
     --popover-foreground: 213 32% 14%;
 
-    --primary: 210 72% 42%;
+    --primary: 174 62% 38%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 94%;
-    --secondary-foreground: 213 32% 14%;
+    --secondary: 200 45% 93%;
+    --secondary-foreground: 210 35% 16%;
 
-    --muted: 210 25% 95%;
-    --muted-foreground: 213 12% 48%;
+    --muted: 180 15% 95%;
+    --muted-foreground: 200 12% 46%;
 
-    --accent: 195 80% 40%;
+    --accent: 215 70% 48%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 210 72% 42%;
+    --border: 180 18% 90%;
+    --input: 180 18% 90%;
+    --ring: 174 62% 38%;
 
     --radius: 0.625rem;
 
     /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(210 72% 42%) 0%, hsl(195 80% 40%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(210 72% 42%) 0%, hsl(210 60% 55%) 50%, hsl(195 80% 40%) 100%);
-    --gradient-radial: radial-gradient(ellipse at 30% 50%, hsl(210 72% 42% / 0.15) 0%, transparent 70%);
-    --section-alt: 210 33% 96%;
-    --section-dark: 213 32% 14%;
-    --section-dark-foreground: 210 33% 98%;
+    --hero-gradient: linear-gradient(135deg, hsl(174 62% 38%) 0%, hsl(215 70% 48%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(174 62% 38%) 0%, hsl(190 55% 45%) 50%, hsl(215 70% 48%) 100%);
+    --gradient-radial: radial-gradient(ellipse at 30% 50%, hsl(174 62% 38% / 0.15) 0%, transparent 70%);
+    --section-alt: 175 25% 96%;
+    --section-dark: 210 35% 14%;
+    --section-dark-foreground: 175 25% 98%;
     --gold: 40 70% 50%;
     --gold-foreground: 0 0% 100%;
     --gold-light: 40 70% 65%;
@@ -50,9 +50,9 @@
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
 
-    --shadow-premium: 0 25px 60px -15px hsl(210 72% 42% / 0.2);
-    --shadow-elevated: 0 40px 80px -20px hsl(213 32% 14% / 0.15);
-    --shadow-glow: 0 0 60px -10px hsl(210 72% 42% / 0.25);
+    --shadow-premium: 0 25px 60px -15px hsl(174 62% 38% / 0.2);
+    --shadow-elevated: 0 40px 80px -20px hsl(210 35% 14% / 0.15);
+    --shadow-glow: 0 0 60px -10px hsl(174 62% 38% / 0.25);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
