@@ -205,8 +205,8 @@ const Index = () => {
             <motion.div {...fadeUp} className="lg:col-span-5 relative">
               <div className="relative">
                 <img
-                  src={clinicExterior}
-                  alt="Bridge Dental Clinic exterior"
+                  src={galleryTreatmentRoom}
+                  alt="Bridge Dental Clinic treatment room"
                   className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/5]"
                   loading="lazy"
                 />
