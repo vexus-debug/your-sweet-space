@@ -92,9 +92,9 @@ const About = () => {
           <SectionHeading subtitle="Our Team" title="Meet Our Dental Professionals" description="A dedicated team of skilled practitioners committed to your oral health and comfort." />
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { name: "Dr. Emmanuel Okonkwo", role: "Lead Dental Surgeon", img: dentistPortrait },
-              { name: "Dr. Amara Nwosu", role: "Cosmetic Dentistry Specialist", img: dentistPortrait },
-              { name: "Dr. Chukwuma Eze", role: "Pediatric Dentist", img: dentistPortrait },
+              { name: "Dr. Emmanuel Okonkwo", role: "Lead Dental Surgeon", img: galleryTreatmentRoom },
+              { name: "Dr. Amara Nwosu", role: "Cosmetic Dentistry Specialist", img: galleryTreatmentRoom },
+              { name: "Dr. Chukwuma Eze", role: "Pediatric Dentist", img: galleryTreatmentRoom },
             ].map((member, i) => (
               <motion.div
                 key={member.name}
