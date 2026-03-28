@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Award, Clock, Users, Heart, MapPin, CreditCard, Accessibility } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import dentistPortrait from "@/assets/dentist-portrait.jpg";
-import clinicExterior from "@/assets/clinic-exterior.jpg";
+import galleryTreatmentRoom from "@/assets/gallery-treatment-room.jpg";
+import galleryReception from "@/assets/gallery-reception.jpg";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -36,7 +36,7 @@ const About = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div {...fadeUp}>
-              <img src={clinicExterior} alt="Bridge Dental Clinic" className="rounded-2xl shadow-xl w-full object-cover aspect-video" loading="lazy" />
+              <img src={galleryReception} alt="Bridge Dental Clinic" className="rounded-2xl shadow-xl w-full object-cover aspect-video" loading="lazy" />
             </motion.div>
             <motion.div {...fadeUp} transition={{ duration: 0.6, delay: 0.2 }}>
               <SectionHeading subtitle="Our Story" title="A Legacy of Trusted Dental Care" center={false} />
@@ -92,9 +92,9 @@ const About = () => {
           <SectionHeading subtitle="Our Team" title="Meet Our Dental Professionals" description="A dedicated team of skilled practitioners committed to your oral health and comfort." />
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { name: "Dr. Emmanuel Okonkwo", role: "Lead Dental Surgeon", img: dentistPortrait },
-              { name: "Dr. Amara Nwosu", role: "Cosmetic Dentistry Specialist", img: dentistPortrait },
-              { name: "Dr. Chukwuma Eze", role: "Pediatric Dentist", img: dentistPortrait },
+              { name: "Dr. Emmanuel Okonkwo", role: "Lead Dental Surgeon", img: galleryTreatmentRoom },
+              { name: "Dr. Amara Nwosu", role: "Cosmetic Dentistry Specialist", img: galleryTreatmentRoom },
+              { name: "Dr. Chukwuma Eze", role: "Pediatric Dentist", img: galleryTreatmentRoom },
             ].map((member, i) => (
               <motion.div
                 key={member.name}
