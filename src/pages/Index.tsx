@@ -280,53 +280,57 @@ const Index = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════
-          SERVICES — Card grid with hover image reveal
+          SERVICES — Immersive card grid
       ═══════════════════════════════════════════════════════ */}
-      <section className="py-20 lg:py-32 bg-section-alt relative">
-        {/* Decorative top edge */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+      <section className="py-20 lg:py-32 bg-section-dark relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+        <div className="absolute top-1/4 -left-32 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 -right-32 w-[400px] h-[400px] bg-accent/5 rounded-full blur-3xl" />
 
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <motion.div {...fadeUp} className="text-center max-w-2xl mx-auto mb-16">
-            <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-primary mb-4">
+            <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-primary/70 mb-4">
               What We Offer
             </span>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-section-dark-foreground mb-4">
               Complete Dental Care Under One Roof
             </h2>
-            <p className="text-muted-foreground text-base lg:text-lg">
+            <p className="text-section-dark-foreground/60 text-base lg:text-lg">
               From routine check-ups to advanced surgical procedures — comprehensive
               care for the whole family.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, i) => (
               <motion.div
                 key={service.title}
                 {...stagger}
                 transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className="group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-lg"
+                className="group relative rounded-2xl overflow-hidden cursor-pointer"
               >
-                {/* Image top */}
-                <div className="h-44 overflow-hidden">
+                {/* Full image background */}
+                <div className="relative h-72 sm:h-80">
                   <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 h-44 bg-gradient-to-t from-card via-transparent to-transparent" />
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground via-foreground/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
                 </div>
 
-                <div className="p-6 pt-4 relative">
-                  <div className="h-10 w-10 rounded-lg gradient-primary flex items-center justify-center mb-4 -mt-10 relative z-10 shadow-md group-hover:scale-110 transition-transform">
+                {/* Content overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <div className="h-11 w-11 rounded-xl gradient-primary flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 group-hover:shadow-primary/30 group-hover:shadow-xl transition-all duration-300 border border-primary-foreground/10">
                     <service.icon className="h-5 w-5 text-primary-foreground" />
                   </div>
-                  <h3 className="font-heading text-lg font-semibold text-foreground mb-2">
+                  <h3 className="font-heading text-xl font-semibold text-primary-foreground mb-2 group-hover:text-gold transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-primary-foreground/70 leading-relaxed translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400">
                     {service.desc}
                   </p>
                 </div>
@@ -334,8 +338,8 @@ const Index = () => {
             ))}
           </div>
 
-          <motion.div {...fadeUp} className="text-center mt-12">
-            <Button variant="outline" size="lg" asChild>
+          <motion.div {...fadeUp} className="text-center mt-14">
+            <Button size="lg" variant="outline" className="border-section-dark-foreground/20 text-section-dark-foreground hover:bg-section-dark-foreground/10 text-base" asChild>
               <Link to="/services">
                 View All Services <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
