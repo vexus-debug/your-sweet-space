@@ -189,8 +189,8 @@ const Index = () => {
               </Button>
               <Button
                 size="lg"
-                variant="outline"
-                className="border-primary-foreground/15 text-primary-foreground hover:bg-primary-foreground/10 text-base backdrop-blur-sm"
+                variant="secondary"
+                className="text-base shadow-elevated"
                 asChild
               >
                 <a href="tel:+2348160090708">
@@ -512,7 +512,7 @@ const Index = () => {
           </div>
 
           <motion.div {...fadeUp} className="text-center mt-16">
-            <Button size="lg" variant="outline" className="border-section-dark-foreground/15 text-section-dark-foreground hover:bg-section-dark-foreground/10 text-base backdrop-blur-sm group" asChild>
+            <Button size="lg" variant="secondary" className="text-base shadow-elevated group" asChild>
               <Link to="/services">
                 View All Services
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -986,8 +986,8 @@ const Index = () => {
               </Button>
               <Button
                 size="lg"
-                variant="outline"
-                className="border-primary-foreground/15 text-primary-foreground hover:bg-primary-foreground/10 text-base backdrop-blur-sm"
+                variant="secondary"
+                className="text-base shadow-elevated"
                 asChild
               >
                 <a href="tel:+2348160090708">
