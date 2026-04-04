@@ -19,6 +19,7 @@ import galleryCleaning from "@/assets/gallery-cleaning-before-after.webp";
 import galleryWhitening2 from "@/assets/gallery-whitening-2.webp";
 import galleryBracesMetal from "@/assets/gallery-braces-metal.jpg";
 import galleryWhitening3 from "@/assets/gallery-whitening-3.webp";
+import alignersCloseup from "@/assets/aligners-closeup.jpg";
 
 /* ─── Animated counter hook ─── */
 const useCounter = (end: number, duration = 2000) => {
@@ -723,7 +724,8 @@ const Index = () => {
               { src: galleryWhitening1, label: "Teeth Whitening", span: "" },
               { src: galleryWhitening2, label: "Whitening Results", span: "" },
               { src: galleryBracesPink, label: "Orthodontic Braces", span: "" },
-              { src: galleryBracesMetal, label: "Precision Care", span: "col-span-2" },
+              { src: galleryBracesMetal, label: "Precision Care", span: "" },
+              { src: alignersCloseup, label: "Clear Aligners", span: "col-span-2" },
             ].map((item, i) => (
               <motion.div
                 key={item.label}

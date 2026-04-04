@@ -13,6 +13,9 @@ import galleryWaitingArea from "@/assets/gallery-waiting-area.jpg";
 import galleryWhitening2 from "@/assets/gallery-whitening-2.webp";
 import galleryCleaning from "@/assets/gallery-cleaning-before-after.webp";
 import galleryWhitening3 from "@/assets/gallery-whitening-3.webp";
+import alignersCloseup from "@/assets/aligners-closeup.jpg";
+import alignersWearing from "@/assets/aligners-wearing.jpg";
+import alignersPair from "@/assets/aligners-pair.jpg";
 
 const images = [
   { src: galleryTreatmentRoom, alt: "Our modern treatment room with advanced dental equipment", category: "Clinic" },
@@ -25,6 +28,9 @@ const images = [
   { src: galleryWhitening3, alt: "Teeth whitening session", category: "Whitening" },
   { src: galleryBracesPink, alt: "Orthodontic braces with pink bands", category: "Orthodontics" },
   { src: galleryBracesMetal, alt: "Metal orthodontic braces treatment", category: "Orthodontics" },
+  { src: alignersCloseup, alt: "Clear aligners close-up fitting on teeth", category: "Orthodontics" },
+  { src: alignersWearing, alt: "Patient wearing clear dental aligners", category: "Orthodontics" },
+  { src: alignersPair, alt: "Pair of clear Invisalign aligners", category: "Orthodontics" },
 ];
 
 const categories = ["All", ...Array.from(new Set(images.map((img) => img.category)))];
