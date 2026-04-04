@@ -74,7 +74,7 @@ const services = [
   { icon: Shield, title: "General & Preventive", desc: "Check-ups, cleanings, sealants, and fluoride treatments to keep your smile healthy.", image: galleryCleaning, accent: "from-primary/80 to-accent/80" },
   { icon: Sparkles, title: "Cosmetic Dentistry", desc: "Whitening, veneers, bonding, and complete smile makeovers that transform.", image: galleryWhitening1, accent: "from-gold/80 to-primary/80" },
   { icon: Heart, title: "Restorative Care", desc: "Crowns, bridges, dentures, and tooth-colored fillings for full restoration.", image: galleryScaling, accent: "from-accent/80 to-primary/80" },
-  { icon: Stethoscope, title: "Surgical & Specialist", desc: "Extractions, root canals, implants, and advanced gum treatment.", image: galleryBracesMetal, accent: "from-primary/80 to-accent/80" },
+  { icon: Stethoscope, title: "Surgical & Specialist", desc: "Extractions, root canals, implants, orthodontic braces, aligners/Invisalign, and advanced gum treatment.", image: galleryBracesMetal, accent: "from-primary/80 to-accent/80" },
   { icon: Baby, title: "Pediatric Dentistry", desc: "Gentle, child-friendly care and preventive treatments for little smiles.", image: galleryBracesPink, accent: "from-gold/80 to-accent/80" },
   { icon: AlertCircle, title: "Emergency Care", desc: "24-hour emergency services for toothaches, fractures, and urgent needs.", image: galleryTreatmentRoom, accent: "from-destructive/60 to-primary/80" },
 ];

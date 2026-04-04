@@ -93,7 +93,7 @@ const serviceCategories: ServiceCategory[] = [
     icon: Stethoscope,
     title: "Surgical & Specialist",
     tagline: "Precision. Expertise. Care.",
-    description: "Our skilled surgical team handles complex procedures with precision, from straightforward extractions to advanced implants.",
+    description: "Our skilled surgical team handles complex procedures with precision, from straightforward extractions to advanced implants, orthodontics, and clear aligners.",
     color: "from-primary to-accent",
     items: [
       { name: "Simple Tooth Extraction", description: "Safe and gentle removal of damaged teeth", duration: "30 min" },
@@ -102,6 +102,8 @@ const serviceCategories: ServiceCategory[] = [
       { name: "Gum Disease Treatment", description: "Periodontal therapy for healthier gums", duration: "60 min" },
       { name: "Dental Implants", description: "Permanent titanium tooth root replacements", duration: "Multiple visits", popular: true },
       { name: "Scaling & Root Planing", description: "Deep cleaning below the gum line", duration: "60 min" },
+      { name: "Orthodontic Braces", description: "Traditional and modern braces for teeth alignment and bite correction", duration: "Multiple visits", popular: true },
+      { name: "Aligners / Invisalign", description: "Clear, removable aligners for discreet teeth straightening", duration: "Multiple visits" },
     ],
   },
   {
