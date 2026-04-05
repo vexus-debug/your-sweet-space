@@ -88,6 +88,22 @@ const Footer = () => {
                 <span className="opacity-80">Open 24 Hours, Every Day</span>
               </li>
             </ul>
+
+            {/* Social Links */}
+            <div className="mt-6">
+              <h4 className="font-heading text-sm font-semibold mb-3">Follow Us</h4>
+              <div className="flex items-center gap-3">
+                <a href="https://instagram.com/warri_dentist" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-lg bg-primary/20 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity" aria-label="Instagram">
+                  <Instagram className="h-4 w-4" />
+                </a>
+                <a href="https://facebook.com/BridgeDentalClinic" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-lg bg-primary/20 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity" aria-label="Facebook">
+                  <Facebook className="h-4 w-4" />
+                </a>
+                <a href="https://maps.google.com/?q=Bridge+Dental+Clinic+Warri" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-lg bg-primary/20 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity" aria-label="Google My Business">
+                  <MapPinned className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
