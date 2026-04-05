@@ -66,6 +66,21 @@ const Contact = () => {
                 ))}
               </div>
 
+              {/* Social Links */}
+              <div className="mt-8">
+                <h4 className="text-sm font-semibold text-foreground mb-3">Follow Us</h4>
+                <div className="flex items-center gap-3">
+                  <a href="https://instagram.com/warri_dentist" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors" aria-label="Instagram">
+                    <Instagram className="h-5 w-5" />
+                  </a>
+                  <a href="https://facebook.com/BridgeDentalClinic" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors" aria-label="Facebook">
+                    <Facebook className="h-5 w-5" />
+                  </a>
+                  <a href="https://maps.google.com/?q=Bridge+Dental+Clinic+Warri" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors" aria-label="Google My Business">
+                    <MapPinned className="h-5 w-5" />
+                  </a>
+                </div>
+              </div>
               {/* Map */}
               <div className="mt-10 rounded-xl overflow-hidden border border-border">
                 <iframe

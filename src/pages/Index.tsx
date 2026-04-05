@@ -926,7 +926,7 @@ const Index = () => {
               <div className="space-y-5 mb-10">
                 {[
                   { icon: MapPin, label: "Address", value: "39 Airport Road, opposite Tivo Supermarket, Effurun, Delta State", color: "bg-primary/10 text-primary" },
-                  { icon: Phone, label: "Phone", value: "+234 816 009 0708", href: "tel:+2348160090708", color: "bg-accent/10 text-accent" },
+                  { icon: Phone, label: "Phone", value: "+234 816 009 0708 / +234 907 374 5258", href: "tel:+2348160090708", color: "bg-accent/10 text-accent" },
                   { icon: Clock, label: "Hours", value: "Open 24 hours — Every day of the week", color: "bg-gold/10 text-gold" },
                 ].map((item) => (
                   <motion.div
