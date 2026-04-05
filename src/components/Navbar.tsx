@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Instagram, Facebook, MapPinned } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoIcon from "@/assets/logo-icon.png";
 
@@ -165,6 +165,26 @@ const Navbar = () => {
               <Phone className="h-4 w-4" />
               +234 816 009 0708
             </a>
+            <a
+              href="tel:+2349073745258"
+              className="flex items-center gap-3 px-4 py-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+            >
+              <Phone className="h-4 w-4" />
+              +234 907 374 5258
+            </a>
+
+            <div className="flex items-center gap-3 px-4 py-2">
+              <a href="https://instagram.com/warri_dentist" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-lg bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/80 hover:text-primary-foreground transition-colors" aria-label="Instagram">
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a href="https://facebook.com/BridgeDentalClinic" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-lg bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/80 hover:text-primary-foreground transition-colors" aria-label="Facebook">
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a href="https://maps.google.com/?q=Bridge+Dental+Clinic+Warri" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-lg bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/80 hover:text-primary-foreground transition-colors" aria-label="Google My Business">
+                <MapPinned className="h-4 w-4" />
+              </a>
+            </div>
+
             <Button asChild variant="secondary" className="w-full">
               <Link to="/booking" onClick={() => setIsOpen(false)}>Book Appointment</Link>
             </Button>
