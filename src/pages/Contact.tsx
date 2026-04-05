@@ -45,7 +45,7 @@ const Contact = () => {
               <div className="space-y-6">
                 {[
                   { icon: MapPin, label: "Visit Us", value: "39 Airport Road, opposite Tivo Supermarket, Warri, Effurun 332011, Delta State, Nigeria" },
-                  { icon: Phone, label: "Call Us", value: "+234 816 009 0708", href: "tel:+2348160090708" },
+                  { icon: Phone, label: "Call Us", value: "+234 816 009 0708 / +234 907 374 5258", href: "tel:+2348160090708" },
                   { icon: Mail, label: "Email Us", value: "bridgedentalclinic1@gmail.com" },
                   { icon: Clock, label: "Opening Hours", value: "Open 24 Hours — Every day of the week" },
                   { icon: CreditCard, label: "Payment Methods", value: "Credit Cards, Debit Cards, NFC Mobile Payments (Apple Pay, Google Pay), Payment Plans" },
